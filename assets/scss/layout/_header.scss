@@ -1,0 +1,86 @@
+header{
+    background-image: url('https://startbootstrap.github.io/startbootstrap-clean-blog/assets/img/home-bg.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    .nav-container{
+        background-color: rgba(0,0,0,0.4);
+        .nav-box{
+            padding: 10px 10%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            .nav-logo{
+                display: inline-block;
+                padding: 24px 16px;
+                a{
+                    font-weight: 800;
+                    font-size: 20px;
+                    color: white;
+                }
+                &:hover a{
+                    color: $grey;
+                }
+            }
+            ul{
+                display: inline-block;
+                li{
+                    display: inline-block;
+                    padding: 24px 16px;
+                    a{
+                        font-size: 12px;
+                        font-weight: 800;
+                        letter-spacing: 1px;
+                        color: white;
+                    }
+                    &:hover a{
+                        color: $grey;
+                    }
+                }
+            }
+            .nav-menu{
+                display: none;
+                border: 1px solid black;
+                text-align: center;
+                padding: 8px 12px;
+                a{
+
+                    color: black;
+                }
+            }
+
+        }
+        @media only screen and (max-width: 1000px) {
+            .nav-box {
+                background-color: white;
+                .nav-logo a{
+                    color: black;
+                }
+                ul{
+                    display: none;
+                }
+                .nav-menu{
+                    display: block;
+                }
+
+            }
+        }
+        .header-text{
+            color: white;
+            padding: 120px 0 200px 0;
+            text-align: center;
+            h1{
+                font-size: 80px;
+                font-weight: 800;
+                line-height: 1.2;
+                margin-bottom: 10px;
+            }
+            p{
+                font-size: 24px;
+                font-weight: 300;
+                line-height: 1.1;
+            }
+        }
+
+    }
+}
